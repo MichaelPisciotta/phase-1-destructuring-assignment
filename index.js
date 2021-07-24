@@ -7,77 +7,76 @@ const farmAnimalsTwo = farmAnimals.split(" "); //["cow", "horse", "sheep", "pig"
 const [moo, neigh, baa, oink, cluck] = farmAnimalsTwo;
 
 
-
-
 //2
 
- const animalNames = farmAnimals.split(" ") //["cow", "horse", "sheep", "pig", "chicken"]
-
- const animalNamesTwo = animalNames.slice(1,2)
-
- const [bessie, dolly, babe, little] = animalNamesTwo;
+ const [bessie, , dolly, babe, little] = farmAnimalsTwo;
 
 
 
-// //3
-// const [blackAndWhite, black, pink] = [cow, sheep, pig];
+//3
+ const [blackAndWhite, , black, pink ] = farmAnimalsTwo;
 
 
 
-// //4
+//4
 
 
-// const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
-// const [red, orange, yellow, green, blue, indigo, violet] = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'] 
-
-
-
-// //5
-
-// const [r, o, y, g, b, v] = ['red', 'orange', 'yellow', 'green', 'blue', 'violet'] 
-
-
-// //6
-
-// const indg = "indigo"
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
 
 
 
-// //7
+//5
+
+const [r, o, y, g, b, , v] = colors;
 
 
-// const muppet = {
-//   muppetName: 'Miss Piggy',
-//   color: 'pink',
-//   song: 'Never Before, Never Again',
-//   job: 'Cast member of The Muppet Show',
-//   partner: 'Kermit'
-// };
+//6
 
-// let [muppetName, color, song, job, partner] = muppet
+const indg = colors[5]
 
 
 
-// //8
+//7
 
-// const nestedMuppet = {
-//   nestedName: 'Kermit',
-//   nestedColor: 'green',
-//   album: {
-//     theMuppetMovie: {
-//       song1: 'Rainbow Connection',
-//       song2: 'Moving Right Along',
-//       song3: 'Never Before, Never Again',
-//       song4: 'I Hope That Something Better Comes Along',
-//     },
-//   },
-//   nestedJob: 'Host of The Muppet Show',
-//   nestedPartner: 'Miss Piggy'
-// };
 
-// let nestedMuppet2 = [ song2, song4, nestedPartner]
-// let nestedMuppet2 = ['Moving Right Along', 'I Hope That Something Better Comes Along']
+const muppet = {
+  muppetName: 'Miss Piggy',
+  color: 'pink',
+  song: 'Never Before, Never Again',
+  job: 'Cast member of The Muppet Show',
+  partner: 'Kermit'
+};
+
+const {muppetName, color, song, job, partner} = muppet;
+
+
+
+//8
+
+const nestedMuppet = {
+  nestedName: 'Kermit',
+  nestedColor: 'green',
+  album: {
+    theMuppetMovie: {
+      song1: 'Rainbow Connection',
+      song2: 'Moving Right Along',
+      song3: 'Never Before, Never Again',
+      song4: 'I Hope That Something Better Comes Along',
+    },
+  },
+  nestedJob: 'Host of The Muppet Show',
+  nestedPartner: 'Miss Piggy'
+};
+
+
+const {song2, song4} = nestedMuppet.album.theMuppetMovie
+const {nestedJob, nestedPartner} = nestedMuppet;
+
+
+//const { ham, hotDog } = doggie.favoriteFoods.meats;
+
 
 
 
