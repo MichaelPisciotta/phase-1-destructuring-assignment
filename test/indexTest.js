@@ -13,6 +13,10 @@ describe("index.js", () => {
     expect(cluck).to.exist
     expect(cluck).to.equal("chicken")
   })
+
+
+
+
   it("String: uses destructuring to declare the four traditional animal names", () => {
     expect(bessie).to.exist
     expect(bessie).to.equal("cow")
@@ -23,6 +27,10 @@ describe("index.js", () => {
     expect(little).to.exist
     expect(little).to.equal("chicken")
   })
+
+
+
+
   it("String: uses destructuring to declare the three traditional animal colors", () => {
     expect(blackAndWhite).to.exist
     expect(blackAndWhite).to.equal("cow")
@@ -31,6 +39,10 @@ describe("index.js", () => {
     expect(pink).to.exist
     expect(pink).to.equal("pig")
   })
+
+
+
+
   it("Array: uses destructuring to declare the seven traditional rainbow color variables using the color names", () => {
     expect(red).to.exist
     expect(red).to.equal("red")
@@ -47,6 +59,9 @@ describe("index.js", () => {
     expect(violet).to.exist
     expect(violet).to.equal("violet")
   })
+
+
+
   it("Array: uses destructuring to declare six rainbow color variables using initials", () => {
     expect(r).to.exist
     expect(r).to.equal("red")
@@ -61,10 +76,21 @@ describe("index.js", () => {
     expect(v).to.exist
     expect(v).to.equal("violet")
   })
+
+
   it("Array: uses destructuring to declare Indigo using indg", () => {
     expect(indg).to.exist
     expect(indg).to.equal("indigo")
   })
+
+
+
+
+
+
+
+
+
   
   it("Object: uses destructuring to assign all appropriate variables using the keys as the variable names", () => {
     expect(muppetName).to.exist
@@ -78,6 +104,8 @@ describe("index.js", () => {
     expect(partner).to.exist
     expect(partner).to.equal("Kermit")
   })
+
+
   
   it("Object: uses destructuring to assign songs 2 and 4, and Kermit's job and partner", () => {
     expect(song2).to.exist
@@ -90,3 +118,4 @@ describe("index.js", () => {
     expect(nestedPartner).to.equal("Miss Piggy")
   })
 })
+
